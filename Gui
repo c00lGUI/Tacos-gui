@@ -102,6 +102,14 @@ local Window = Rayfield:CreateWindow({
  })
 
  local Button = MainTab:CreateButton({
+   Name = "Rivals (can get u baned if u stupid)",
+   Interact = 'Click',
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubRivals"))()
+   end,
+})
+
+ local Button = MainTab:CreateButton({
    Name = "DeadRails",
    Interact = 'Click',
    Callback = function()
