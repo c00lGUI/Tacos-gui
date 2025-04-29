@@ -22,7 +22,7 @@ local Window = Rayfield:CreateWindow({
        RememberJoins = true -- Set this to false to make them join the discord every time they load it up
     },
  
-    KeySystem = false, -- Set this to true to use our key system
+    KeySystem = true, -- Set this to true to use our key system
     KeySettings = {
        Title = "Taco hub | key",
        Subtitle = "Key System",
@@ -89,7 +89,7 @@ local Window = Rayfield:CreateWindow({
     Name = "Forsaken",
     Interact = 'Click',
     Callback = function()
-        loadstring(game:HttpGet(''))()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Saiky988/Saryn-Hub/refs/heads/main/Saryn%25Hub%25Beta.lua'))()
     end,
  })
 
@@ -100,6 +100,15 @@ local Window = Rayfield:CreateWindow({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
     end,
  })
+
+ local Button = MainTab:CreateButton({
+   Name = "DeadRails",
+   Interact = 'Click',
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubDeadRails"))()
+   end,
+})
+
 
  local coolTab = Window:CreateTab("c00lgui", 89298313979771 ) -- Title, Image
 
