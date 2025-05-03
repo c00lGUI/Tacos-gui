@@ -105,7 +105,7 @@ local Window = Rayfield:CreateWindow({
     Name = "Secret Staycation",
     Interact = 'Click',
     Callback = function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/Lightux/main/README.md'),true))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/cool83birdcarfly02six/LightuxSolaraSup/main/README.md'))()
     end,
  })
 
