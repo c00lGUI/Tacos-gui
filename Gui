@@ -110,6 +110,14 @@ local Window = Rayfield:CreateWindow({
  })
 
  local Button = MainTab:CreateButton({
+    Name = "1+ speed maze",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/VzlyBDVk/raw"))()
+    end,
+ })
+
+ local Button = MainTab:CreateButton({
    Name = "Rivals (can get u baned if u stupid)",
    Interact = 'Click',
    Callback = function()
