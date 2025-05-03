@@ -102,10 +102,10 @@ local Window = Rayfield:CreateWindow({
  })
 
  local Button = MainTab:CreateButton({
-    Name = "Secret Staycation",
+    Name = "Basket ball zero",
     Interact = 'Click',
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/cool83birdcarfly02six/LightuxSolaraSup/main/README.md'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/roscripts749/loader/refs/heads/main/loader"))()
     end,
  })
 
