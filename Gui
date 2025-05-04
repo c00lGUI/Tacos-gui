@@ -178,14 +178,20 @@ local Window = Rayfield:CreateWindow({
  })
 
 
-local MiscTab = Window:CreateTab("other", 89298313979771 ) -- Title, Image
+local MiscTab = Window:CreateTab("Other", 89298313979771 ) -- Title, Image
 
+ local Button = MiscTab:CreateButton({
+    Name = "Delete Script",
+    Interact = 'Click',
+    Callback = function()
+	Rayfield:Notify({
+   		Title = "U sure?",
+   		Content = "ALR",
+   		Image = 4483362458,
 
-local Input = MiscTab:CreateInput({
-	Name = "Print in console",
-	PlaceholderText = "Taco 🌮🌮",
-	RemoveTextAfterFocusLost = false,
-	Callback = function(Text)
-	    Print(Text)
-	end,
-})
+   		OnClick = function()
+			Rayfield:Destroy()
+   		end,
+	})
+    end,
+ })
