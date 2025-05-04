@@ -184,14 +184,6 @@ local MiscTab = Window:CreateTab("Other", 89298313979771 ) -- Title, Image
     Name = "Delete Script",
     Interact = 'Click',
     Callback = function()
-	Rayfield:Notify({
-   		Title = "U sure?",
-   		Content = "ALR",
-   		Image = 4483362458,
-
-   		OnClick = function()
-			Rayfield:Destroy()
-   		end,
-	})
+	Rayfield:Destroy()
     end,
  })
