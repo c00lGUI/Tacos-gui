@@ -94,6 +94,14 @@ local Window = Rayfield:CreateWindow({
  })
 
  local Button = MainTab:CreateButton({
+    Name = "Blue lock Rivals",
+    Interact = 'Click',
+    Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/dehism/Dehism/refs/heads/main/Inf%20Spins%20Auto%20Dehism",true))()
+    end,
+ })
+
+ local Button = MainTab:CreateButton({
     Name = "Fisch (SpeedXhub)",
     Interact = 'Click',
     Callback = function()
