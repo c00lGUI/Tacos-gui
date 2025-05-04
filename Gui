@@ -152,15 +152,6 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
-local Input = coolTab:CreateInput({
-	Name = "Print in console",
-	PlaceholderText = "Taco 🌮🌮",
-	RemoveTextAfterFocusLost = false,
-	Callback = function(Text)
-	    Print(Text)
-	end,
-})
-
 
  local Button = coolTab:CreateButton({
     Name = "Dex",
@@ -187,4 +178,14 @@ local Input = coolTab:CreateInput({
  })
 
 
-local Tab = Window:CreateTab("WHY", 89298313979771 ) -- Title, Image
+local MiscTab = Window:CreateTab("other", 89298313979771 ) -- Title, Image
+
+
+local Input = MiscTab:CreateInput({
+	Name = "Print in console",
+	PlaceholderText = "Taco 🌮🌮",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(Text)
+	    Print(Text)
+	end,
+})
