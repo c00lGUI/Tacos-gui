@@ -181,9 +181,9 @@ local Window = Rayfield:CreateWindow({
 local MiscTab = Window:CreateTab("Other", 89298313979771 ) -- Title, Image
 
  local Button = MiscTab:CreateButton({
-    Name = "Delete Script",
+    Name = "Delte script",
     Interact = 'Click',
     Callback = function()
-	Rayfield:Destroy()
+        Rayfield:Destroy()
     end,
  })
